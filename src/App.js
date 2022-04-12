@@ -1,19 +1,14 @@
-// NPM modules
-import React from 'react'
-
-// Custom Components
 import Account from './components/Account'
-
-// Resources
 import logo from './ga.png'
 import './styles/App.css'
 
-function App() {
+const App = () => {
+
   return (
     <div id="content">
       <div id="nav">
         <div id="logo">
-          <img src={logo} alt="General Assembly logo" />
+          <img src={logo} alt="General Assembly Logo" />
         </div>
         <div id="title">Bank of GA</div>
       </div>

@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import '../styles/App.css'
 
 const Account = (props) => {
   let [amount, setAmount] = useState(0)
   let [balance, setBalance] = useState(0)
 
-  const handleClick = (e) => {
-    e.preventDefault()
+  const handleClick = (event) => {
+    event.preventDefault()
     if (isNaN(amount)) {
       console.log('Not a number')
     } else {
@@ -31,7 +31,7 @@ const Account = (props) => {
           type="text"
           placeholder="amount"
           value={amount}
-          onChange={(e) => setAmount(e.target.value)}
+          onChange={(event) => setAmount(event.target.value)}
         />
         <br />
         <br />
