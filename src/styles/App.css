@@ -5,16 +5,7 @@ body {
   font-family: 'Ruluko', sans-serif;
   margin: 0px auto;
   text-align: center;
-  width: 700px;
-}
-
-.header {
-  margin: 50px 0px;
-}
-
-.title {
-  color: #F52F4F;
-  font-size: 50px;
+  width: 100vw;
 }
 
 .account {
@@ -27,14 +18,21 @@ body {
   width: 300px;
 }
 
+.account:hover {
+  background-color: #8fb795;
+}
+
 .balance {
   background-color: #E3E3E3;
   border: 1px solid #676767;
   border-radius: 15px;
-  font-family: 'Ruluko', sans-serif;
   font-size: 50px;
   margin: 5px;
   padding: 25px 0px;
+}
+
+.balance:hover {
+  background-color: #f6f6f6;
 }
 
 .zero {
@@ -42,12 +40,30 @@ body {
   color: #FFFFFF;
 }
 
+.zero:hover {
+  background-color: #fb506d;
+}
+
 .input {
   height: 3vmin;
   width: 10vmin;
-  font-family: 'Ruluko', sans-serif;
   text-align: center;
   font-size: 1.75vmin;
+}
+
+#nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.bank {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
 }
 
 .btn {
