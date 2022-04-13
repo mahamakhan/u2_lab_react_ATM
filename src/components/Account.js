@@ -2,7 +2,7 @@ import { useState } from 'react'
 import '../styles/App.css'
 
 const Account = (props) => {
-  let [amount, setAmount] = useState(0)
+  let [amount, setAmount] = useState("")
   let [balance, setBalance] = useState(0)
 
   const handleClick = (event) => {
