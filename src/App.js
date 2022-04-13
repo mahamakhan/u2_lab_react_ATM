@@ -1,6 +1,6 @@
-import Account from './components/Account'
 import logo from './ga.png'
 import './styles/App.css'
+import Account from './components/Account'
 
 const App = () => {
 
@@ -12,8 +12,9 @@ const App = () => {
         </div>
         <div id="title">Bank of GA</div>
       </div>
-      <Account name="Checking" />
-      <div className="clear"></div>
+      <div className="bank">
+        <Account name="Checking" />
+      </div>
     </div>
   )
 }
